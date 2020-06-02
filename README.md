@@ -6,17 +6,17 @@ It requires FFmpeg and FFprobe in the same directory for it to work.
 Usage:  
 `python Converter.py <input file> <output format>`  
 Requires:  
-FFmpeg
+* FFmpeg
 
 ## Compressor
 Usage:  
 `python Compressor.py <input file> [<crf=26>]`  
 Requires:  
-FFmpeg
+* FFmpeg
 
 ## Splitter
 Usage:  
 `python Splitter.py <input file>`  
 Requires:  
-FFmpeg  
-FFprobe
+* FFmpeg  
+* FFprobe
