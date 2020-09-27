@@ -1,12 +1,11 @@
 import sys
 import subprocess
 
-if len(sys.argv) != 3:
-    print("Usage: python Converter.py <input file> <output format>")
-    sys.exit(1)
+def convert(filename: str, new_format: str):
+    subprocess.run(["ffmpeg", "-i", filename, (filename + "_converted." + new_format)])
 
-# constant filename
-INPUTFILE = sys.argv[1]
-
-# call ffmpeg
-subprocess.run(["ffmpeg", "-i", INPUTFILE, (INPUTFILE + "_converted." + sys.argv[2])])
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python Converter.py <input file> <output format>")
+        sys.exit(1)
+    convert(sys.argv[1], sys.argv[2])
