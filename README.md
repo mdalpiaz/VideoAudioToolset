@@ -22,8 +22,8 @@ Requires:
 * FFprobe
 
 ## VideoPreparer
-Usage:
-`python VideoPreparer.py <input file>`
-Requires:
-* FFmpeg
+Usage:  
+`python VideoPreparer.py <input file>`  
+Requires:  
+* FFmpeg  
 * FFprobe
