@@ -20,3 +20,10 @@ Usage:
 Requires:  
 * FFmpeg  
 * FFprobe
+
+## VideoPreparer
+Usage:
+`python VideoPreparer.py <input file>`
+Requires:
+* FFmpeg
+* FFprobe
